@@ -29,6 +29,7 @@ html{
     width: 100%;
     color: #1593d3;
     animation: rotateWord 15s linear infinite 0s;
+    -webkit-animation: rotateWord 15s linear infinite 0s;
 }
 .words span:nth-child(2) { 
     -webkit-animation-delay: 5s; 
@@ -47,14 +48,13 @@ html{
 #frame{
 text-align: center;
 }
-
-@keyframes rotateWord {
+@-webkit-keyframes rotateWord {
     0%   { width: 0; opacity: 0; }
     25%  { width: 100px; opacity: 1; }
     33%  { opacity: 0; }
     100% { opacity: 0; }
 }
-@-webkit-keyframes rotateWord {
+@keyframes rotateWord {
     0%   { width: 0; opacity: 0; }
     25%  { width: 100px; opacity: 1; }
     33%  { opacity: 0; }
