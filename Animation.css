@@ -1,0 +1,56 @@
+html{
+	font-family:'Didact Gothic', sans-serif;
+	src: local("Didact Gothic,sans-serif"); url(http://www.google.com/fonts#UsePlace:use/Collection:Didact+Gothic)
+	font-size: 100%;
+	line-height: 2;
+}	
+#header{
+	text-align: center;
+	margin: auto;
+
+}
+.words{
+    width: 80%;
+    position: relative;
+    margin: 110px auto 0 auto;
+    font-family: 'Didact Gothic';
+    padding: 10px;
+
+}
+.words{
+    display: inline;
+    text-indent: 10px;
+    text-align: left;
+}
+.words span{
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    color: #1593d3;
+    animation: rotateWord 15s linear infinite 0s;
+}
+.words span:nth-child(2) { 
+    -webkit-animation-delay: 5s; 
+    animation-delay: 5s; 
+    color: #c9d7df;
+}
+.words span:nth-child(3) { 
+    -webkit-animation-delay: 10s;  
+    animation-delay: 10s; 
+    color: #ff7c1d;
+}
+.header span {
+    animation: 10s linear 0s normal none infinite rotateWordsSecond;
+}
+
+#frame{
+text-align: center;
+}
+
+@keyframes rotateWord {
+    0%   { width: 0; opacity: 0; }
+    25%  { width: 100px; opacity: 1; }
+    33%  { opacity: 0; }
+    100% { opacity: 0; }
+}
