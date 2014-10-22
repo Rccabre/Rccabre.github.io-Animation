@@ -54,3 +54,9 @@ text-align: center;
     33%  { opacity: 0; }
     100% { opacity: 0; }
 }
+@-webkit-keyframes rotateWord {
+    0%   { width: 0; opacity: 0; }
+    25%  { width: 100px; opacity: 1; }
+    33%  { opacity: 0; }
+    100% { opacity: 0; }
+}
